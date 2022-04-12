@@ -1,6 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-// import Pagination from "./components/Pagination";
+import Pagination from "./components/Pagination";
 import Photos from "./components/Photos";
 
 function App() {
@@ -44,13 +44,13 @@ function App() {
         <Photos photos={currentPictures} loading={loading} />
       </div>
       <div className="paginate">
-        {/* <Pagination
+        <Pagination
           picPerPage={picPerPage}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
           totalPictures={photos.length}
           paginate={paginate}
-        /> */}
+        />
       </div>
     </div>
   );
