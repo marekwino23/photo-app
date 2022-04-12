@@ -12,7 +12,6 @@ function App() {
   useEffect(() => {
     fetch("https://picsum.photos/v2/list", {
       method: "GET",
-      mode: "cors",
       headers: {
         "Content-Type": "application/json",
       },

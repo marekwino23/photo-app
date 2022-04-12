@@ -23,10 +23,14 @@ const Pagination = ({
     <nav>
       <ul className="pagination">
         {currentPage === 2 || currentPage > 2 ? (
-          <button onClick={prevPage}>prev</button>
+          <button className="next" onClick={prevPage}>
+            Prev
+          </button>
         ) : null}
         {currentPage !== totalPictures / picPerPage ? (
-          <button onClick={nextPage}>next</button>
+          <button className="previous" onClick={nextPage}>
+            Next
+          </button>
         ) : null}
         {pageNumbers.map((number) => {
           return (

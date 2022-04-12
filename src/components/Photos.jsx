@@ -5,14 +5,9 @@ const Photos = ({ photos, loading }) => {
   }
 
   return (
-    <ul className="list-group mb-4">
+    <ul className="list-group">
       {photos.map((photo) => (
-        <img
-          key={photo.id}
-          alt="pic"
-          src={photo.download_url}
-          className="list-group-item"
-        ></img>
+        <img key={photo.id} alt="pic" src={photo.download_url}></img>
       ))}
     </ul>
   );
