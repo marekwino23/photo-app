@@ -43,6 +43,10 @@ a:hover {
   color: black;
 }
 
+.box {
+  max-width: 100%;
+}
+
 li {
   list-style-type: none;
 }
